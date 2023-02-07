@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+    <head>
+        <title>Update Item</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <div class="container-md">
+            <form class="row g-3" id="add-item-form">
+                <div class="col-md-6">
+                  <label for="input-item-name" class="form-label">Item Name</label>
+                  <input type="text" class="form-control" id="input-item-name">
+                </div>
+                <div class="col-md-6">
+                    <label for="input-price" class="form-label">Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Price in dollar" id="input-price">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="input-url" class="form-label">Item URL</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon3">https://example.com/item/</span>
+                      <input type="text" class="form-control" id="input-url" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="col-12">
+                  <label for="input-image" class="form-label">Image File</label>
+                  <input class="form-control" type="file" id="input-image" accept="image/jpeg, image/png, image/jpg">
+                  <!-- <label for="input-image" class="form-label">Image File</label>
+                  <input type="text" class="form-control" id="input-image"> -->
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" id="item-form-submit">Update Item</button>
+                </div>
+            </form>
+            <div class="card" id="item-display">
+              <img src="../images/test.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <ul class="list-group list-group-flush">
+                </ul>
+                <a href="./update-item.html" class="btn btn-primary" id="update-item-btn">Update item information</a>
+              </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <script src="../js/update-item.js"></script>
+    </body>
+</html>

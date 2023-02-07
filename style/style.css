@@ -1,0 +1,16 @@
+:root {
+    --new-itemwidth: 42rem;
+}
+
+#add-item-form {
+    display: flex;
+}
+
+#item-display {
+    display: none;
+    width: var(--new-itemwidth);
+}
+
+.item-description {
+    width: var(--new-itemwidth);
+}
